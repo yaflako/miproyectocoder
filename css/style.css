@@ -1,0 +1,893 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@200;800&family=Open+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+body{
+    background-image: url(../img/background.png);
+}
+
+/*GENERALES*/
+
+.center{
+    text-align: center;
+}
+
+.no-decoration{
+    text-decoration: none;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.titulo-claro{
+    font-size: 2.4rem;
+    text-align: center;
+    color: white;
+    padding: 3rem 0 3rem 0;
+}
+
+.titulo-claro:visited{
+    color: none;
+}
+
+.titulo-claro:hover{
+    color: greenyellow;
+    transition: all 1s;
+}
+
+.flex-hijo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-image: linear-gradient(to left, greenyellow , white);
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    font-size: 1.8rem;
+    color: black;
+}
+
+.align-center{
+    text-align: center;
+}
+
+/* INDEX */
+
+/* METODOLOGIA BEM */
+
+/* PRESENTACIÓN BEM */
+
+.section__presentacion{
+    background-color: black;
+    height:100%;
+    padding-top: 5em;
+}
+
+.section__presentacion--list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.section__presentacion--listitem{
+    width: 8rem;
+    list-style-type: none;
+    transition: all 0.5s;
+}
+
+.section__presentacion--listitem:hover{
+    transform: scale(1.1);
+    transform: rotate(15deg);
+}
+
+.section__presentacion--texto{
+    list-style: none;
+    font-size: 2.4rem;
+    font-weight: 300;
+    text-align: center;
+    padding: 5rem 0 5rem 0;
+}
+
+/* NOTICIAS BEM */
+
+.section__noticias{
+    background-image: url(../img/bg4.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 5rem;
+}
+
+.section__noticias--hijo{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    background-image: linear-gradient(to left, greenyellow , white);
+    border-radius: 3px;
+    padding: 1rem;
+}
+
+.section__noticias--img{
+    width: 32rem;
+    color: black;
+}
+
+
+.section__noticias--titulo{
+    padding: 1rem 0 1rem 0;
+
+}
+
+.section__noticias--titulo{
+    transition: all 1s;
+}
+
+.section__noticias--enlace{
+    color: black;
+    font-size: 1.8rem;
+    font-family: 'Encode Sans SC', sans-serif;
+    padding-top: 0.5rem 0 0.5rem 0;
+    text-decoration: none;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.section__noticias--flex{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.section__noticias--titulopresentacion{
+    text-align: center;
+    color: black;
+    font-size: 2.4rem;
+    font-family: 'Encode Sans SC', sans-serif;
+    text-decoration: none;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    font-size: 2.4rem;
+    text-align: center;
+    color: white;
+    padding: 3rem 0 3rem 0;
+}
+
+.section__noticias--titulopresentacion:visited{
+    color: black;
+}
+
+.section__noticias--titulopresentacion:hover{
+    color: greenyellow;
+}
+
+.noticiasBorde{
+    border: 2px greenyellow;
+    border-radius: 10px;
+}
+
+/* EVENTOS BEM */
+
+.section__shows{
+    background-image: url(../img/bg3.jpg);
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+.section__shows--titulo{
+    text-align: center;
+    color: black;
+    font-size: 2.4rem;
+    font-family: 'Encode Sans SC', sans-serif;
+    text-decoration: none;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.section__shows--titulo:visited{
+    color: black;
+}
+
+.section__shows--titulo:hover{
+    color: greenyellow;
+}
+
+.section__shows--hijo{
+    height: 35rem;
+    float: left;
+    display: inline block;
+    list-style-type: none;
+    text-align: center;
+    transition: all 1s;    
+}
+
+.section__shows--hijo:hover{
+    transform: scale(1.1);
+    border: 2px;
+    border-color: greenyellow;
+}
+
+/* FOOTER BEM */
+
+footer{
+    background-color: black;
+    width: 100%;
+}
+
+footer img{
+    width: 3.5rem;
+}
+
+.footer__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+
+.footer__redes--enlace{
+    text-decoration: none;
+}
+
+.footer__redes--enlace:visited{
+    color: none;
+}
+
+.footer__redes--enlace:hover{
+    color:greenyellow;
+}
+
+.footer__redes--img{
+    width: 3rem;
+    padding: 2rem;
+    color: white;
+}
+
+.footer__redes--img:hover{
+    transform: translateY(-0.3rem);
+    animation: normal;
+}
+
+
+.footer__texto--pequeño{
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 2rem;
+}
+
+.footer__nosotros{
+    padding-top: 3rem;
+    margin-top: 3rem;
+}
+
+
+/*TITULOS*/
+
+h1, h2, h3{
+    color: white;
+    font-family: 'Encode Sans SC', sans-serif;
+    text-align: center;
+}
+
+h1{
+    font-size: 7rem;
+    position: absolute;
+    top: 25rem;
+    left: 30rem;
+}
+
+/*TEXTOS*/
+
+p{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+}
+
+/*MULTIMEDIA*/
+
+video{
+    width: 35rem;
+}
+
+/*MENU DE NAVEGACIÓN*/
+
+.contenedor{
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.nav-style{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.nav-style ul{
+    width: auto;
+}
+
+nav{
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.menu{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+.menu:visited{
+    color: white;
+}
+
+.menu:hover{
+    color: greenyellow;
+    transition: all 0.5s;
+}
+
+.portada{
+    width: 100%;
+}
+
+.opcion{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: center;
+    font-size: 1.6rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: white;
+    padding: 1rem 8rem 1rem 8rem;
+}
+
+.nav-style{
+    width: 100%;
+}
+
+#flotante{
+    flex-direction: row;
+    width: 7.5rem;
+    padding: 0.4rem 8rem 0.4rem 0.4rem;
+}
+
+.linea {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+.linea:hover, .linea:focus {
+    background-size: 100% 2px;
+}
+
+nav div a img{
+    width: 6rem;
+}
+
+nav{
+    background-color: black;
+}
+
+.bgBlack{
+    background-color: black;
+}
+
+/*ESTILO página INICIO*/
+
+/*SECCIÓN PRESENTACIÓN*/
+
+.cultura{
+    width: 8rem;
+    list-style-type: none;
+}
+
+.lista-flotante{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.presentacion div ul li img{
+    width: 8rem;
+    padding: 2rem 0 2rem 0;
+}
+
+
+.titulo-secundario{
+    text-align: center;
+    color: black;
+    font-size: 2.4rem;
+    font-family: 'Encode Sans SC', sans-serif;
+    text-decoration: none;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.titulo-secundario:visited{
+    color: black;
+}
+
+.titulo-secundario:hover{
+    color: greenyellow;
+}
+
+.link{
+    text-align: center;
+}
+
+
+.rotacion:hover{
+    transform: scale(1.1);
+    transform: rotate(15deg);
+}
+
+.rotacion{
+    transition: all 0.5s;
+}
+
+.scale{
+    transition: all 1s;
+}
+
+.scale:hover{
+    transform: scale(1.1);
+    border: 2px;
+    border-color: greenyellow;
+}
+
+.padre-flex {
+    display: flex;  
+    flex-direction: row; 
+    justify-content: space-between;
+}
+ 
+/*SECCIÓN SHOWS*/
+
+.titulo{
+    font-size: 3rem;
+    text-align: center;
+    color: black;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.
+x{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.transition{
+    transition: all 1s;
+}
+
+
+
+
+
+
+/*ESTILO NOTICIAS*/
+
+.enlace-titulo{
+    color: black;
+    font-size: 1.8rem;
+    font-family: 'Encode Sans SC', sans-serif;
+    padding-top: 0.5rem 0 0.5rem 0;
+}
+
+.enlace-titulo:hover{
+    color: greenyellow;
+} 
+
+.titulo-noticias{
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.enlace-noticias{
+    text-decoration: none;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.enlace-noticias:hover{
+    color: greenyellow;
+    transition: all 1s;
+}
+
+.enlace-noticias:visited{
+    color: none;
+}
+
+.enlace-noticias a h3{
+    color: black;
+}
+
+.enlace-noticias a h3:hover{
+    color: greenyellow;
+}
+
+.news-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.articulo-noticias{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    text-align: center;
+    margin-bottom: 5rem;
+    width: 45rem;
+    justify-content: center;
+}
+
+.articulo-noticias img{
+    padding: 3rem auto 3rem auto;
+}
+
+.titulo-articulo{
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.black-text{
+    color: black;
+    height: auto;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.ver-mas{
+    color: black;
+    font-family:'Encode Sans SC', sans-serif; 
+    font-weight: bold;
+    text-decoration: none;
+    padding-bottom: 2rem;
+}
+
+.ver-mas:hover{
+    color: greenyellow;
+}
+
+.ver-mas:visited{
+    color: none;
+}
+
+.separador{
+    color: black;
+}
+
+.more-news{
+    font-family:'Encode Sans SC', sans-serif;
+    font-size: 3.6rem;
+}
+
+.more-news:visited{
+    color: white;
+}
+
+.more-news:hover{
+    color: greenyellow;
+}
+
+.frame-spotify{
+    width: 35%;
+    margin-left: 43.5rem;
+    margin-bottom: 25px;
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.spotify{
+    background-image: url(../img/bg6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 55px;
+}
+
+.contenedor-dos{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+/*ESTILO página NOSOTROS*/
+
+.texto-us{
+    width: 60rem;
+    text-align: center;
+    margin-left: 380px ;
+    margin-bottom: 5rem;
+    color: black;
+}
+
+.titulo-nosotros{
+    font-size: 3rem;
+    color: black;
+    padding: 4rem 0 2rem 0;
+    
+}
+
+.titulo-nosotros2{
+    font-size: 3rem;
+    padding-top: 3rem;
+    color: white;
+}
+
+.x-nosotros{
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+}
+
+.card-title-us{
+    font-family: 'Encode Sans SC', sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+.card-us{
+    border-radius: 8px;
+    background-color: grey;
+    background-image: url(../img/Artshit.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+footer{
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+}
+
+
+
+.developed{
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 2rem;
+}
+
+/*ESTILO CONTACTO*/
+
+.titulo-contacto{
+    color: black;
+    margin-left: 15rem;
+}
+
+.form button{
+    margin: 2rem;
+    margin-left: 8rem;
+    float: left;
+}
+
+.form select{
+    margin: 2rem;
+    margin-left: 8rem;
+}
+
+.form label{
+    margin: 1.2rem;
+    font-family:'Open Sans', sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.form-container{
+    width: 60rem;
+    background-image: url(../img/oriental-tiles.png);
+    background-repeat: repeat;
+    border-radius: 3.5rem;
+    border-width: thin ;
+    border-color: greenyellow;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 8rem;
+}
+
+/*PÁGINA EVENTOS*/
+
+
+.texto-eventos{
+    color: black;
+    font-size: 1.6rem;
+    padding: 2rem;
+}
+
+.enlace-eventos:visited{
+    color: black;
+}
+
+.enlace-eventos:hover{
+    color: greenyellow
+}
+
+.ubicacion{
+    font-family:'Open Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 1rem 0 2rem 0;
+}
+
+.maps{
+    width: 25rem;
+    height: auto;
+    padding: 0 0 3rem 0;
+}
+
+.x-ev{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 350px;
+    align-items: center;
+}
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+}
+
+.padre2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.img{
+    width: 28rem;
+    padding: 3rem;
+}
+
+.dark{
+    color: black;
+    font-size: 2.2rem;
+}
+
+.icono-ubi{
+    width: 3rem;
+}
+
+.cut{
+    height: 18rem;
+}
+
+table {
+    border: 3px;
+    width: 35%;
+    border-collapse: collapse;
+    border: 3px solid greenyellow;
+  }
+
+td, th, tr, caption{
+    color: white;
+    font-family:'Open Sans', sans-serif;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+.zebra-uno{
+    background-color: black;
+}
+
+.zebra-dos{
+    background-color: grey;
+}
+
+.titulo-terciario{
+    text-align: center;
+}
+
+.yutu{
+    width: 45rem;
+}
+
+.call-to-action{
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 38.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.call-to-action:visited{
+    color: none;
+}
+
+.call-to-action:hover{
+    color: greenyellow;
+    font-weight: bolder;
+}
+
+.seccion-final{
+    margin-bottom: 5rem;
+}
+
+/* ERROR 404 */
+
+.error__body{
+    background-color: black;
+}
+
+.error__bloque{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+
+.error__bloque--img{
+    width: 22rem;
+    margin-bottom: 1rem;
+}
+
+.error__bloque--texto{
+    font-size: x-large;
+}

@@ -1,0 +1,25 @@
+{
+  "name": "coderhouse",
+  "version": "1.0.0",
+  "description": "Carpeta donde se alberga todo el proyecto para el curso de CODEr",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilosSCSS.scss css/estilosCSS.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "author": "Yago Goldberg",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "trabajo"
+  ]
+}
