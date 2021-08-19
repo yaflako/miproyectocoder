@@ -306,6 +306,12 @@ h1{
     left: 30rem;
 }
 
+section h2{
+    margin-bottom: 2em;
+    margin-top: 2em;
+    font-size: 3em;
+}
+
 /*TEXTOS*/
 
 p{
@@ -746,6 +752,15 @@ footer{
     margin-bottom: 8rem;
 }
 
+.formulario{
+    width: 75%;
+    background-color: white;
+}
+
+.fondoguido{
+    background-color: white;
+}
+
 /*PÁGINA EVENTOS*/
 
 
@@ -770,12 +785,6 @@ footer{
     padding: 1rem 0 2rem 0;
 }
 
-.maps{
-    width: 25rem;
-    height: auto;
-    padding: 0 0 3rem 0;
-}
-
 .x-ev{
     display: flex;
     flex-direction: column;
@@ -798,10 +807,6 @@ footer{
     
 }
 
-.img{
-    width: 28rem;
-    padding: 3rem;
-}
 
 .dark{
     color: black;
@@ -866,6 +871,12 @@ td, th, tr, caption{
 .seccion-final{
     margin-bottom: 5rem;
 }
+
+.linkEventosPequeño{
+    padding-bottom: 10px;
+    color: white;
+}
+
 
 /* ERROR 404 */
 
