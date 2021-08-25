@@ -503,8 +503,7 @@ nav{
     padding-top: 3rem;
 }
 
-.
-x{
+.x{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
@@ -687,13 +686,13 @@ x{
     color: black;
 }
 
-.card-us{
+/* .card-us{
     border-radius: 8px;
     background-color: grey;
     background-image: url(../img/Artshit.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 
 
@@ -755,6 +754,9 @@ footer{
 .formulario{
     width: 75%;
     background-color: white;
+    margin-left: 15rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .fondoguido{
